@@ -1,0 +1,19 @@
+{
+  "name": "p0",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev --host",
+    "build": "npm run lint && vite build",
+    "preview": "npm run build && vite preview",
+    "lint": "prettier . --check && eslint .",
+    "lint:fix": "prettier . --write && eslint . --fix",
+    "husky": "husky install"
+  },
+  "devDependencies": {
+    "@codepiercer/svelte-tailwind": "0.7.1",
+    "@sveltejs/adapter-auto": "2.0.0",
+    "husky": "8.0.3"
+  },
+  "type": "module"
+}
