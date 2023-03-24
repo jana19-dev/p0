@@ -8,9 +8,12 @@
   let isLoading = false
   let success
   let error
-  const allCurvatures = []
+  let allCurvatures = []
 
   const findMaxCurvature = () => {
+    x = []
+    y = []
+    allCurvatures = []
     isLoading = true
     // Convert the input strings to arrays of numbers
     x = xInput
