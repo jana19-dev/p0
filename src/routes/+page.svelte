@@ -68,7 +68,9 @@
     <SuccessAlert>
       <p class="mb-2">{success}</p>
       {#each allCurvatures as curvature, idx}
-        <p>Curvature at point ({x[idx]}, {y[idx]}): {curvature}</p>
+        <p>
+          Curvature between points ({x[idx]}, {y[idx]}) and ({x[idx + 1]}, {y[idx + 1]}): {curvature}
+        </p>
       {/each}
     </SuccessAlert>
   {/if}
